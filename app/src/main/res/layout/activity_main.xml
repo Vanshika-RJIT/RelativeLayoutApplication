@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="23dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edittext1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:autofillHints="text"
+        android:hint="@string/enter_text"
+        android:layout_alignParentStart="true"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="134dp"
+        android:layout_below="@+id/edittext1"
+        android:layout_alignLeft="@+id/edittext1"
+        android:text="@string/clear_button"
+        android:layout_alignStart="@+id/edittext1" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="134dp"
+        android:layout_below="@+id/edittext1"
+        android:layout_alignRight="@+id/edittext1"
+        android:text="@string/toast_button"
+        android:layout_alignEnd="@+id/edittext1" />
+
+</RelativeLayout>
